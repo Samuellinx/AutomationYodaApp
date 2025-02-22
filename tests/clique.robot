@@ -4,7 +4,7 @@ Library    AppiumLibrary
 
 *** Test Cases ***
 
-Deve abrir a tela principal 
+Deve realizar um clique simples
 
     ${AbrirApp}    Open Application    http://localhost:4723
     ...                 platformName=Android
@@ -15,8 +15,8 @@ Deve abrir a tela principal
     ...                 autoGrantPermission=true
 
 
-    Wait Until Page Contains         Yodapp    10
-    Wait Until Page Contains         Mobile Training    10
-    Wait Until Page Contains         by Papito    10
-
-    Close Application 
+    Wait Until Page Contains         Yodapp    
+    Click Text    QAX
+    Sleep    5
+    
+    Close Application

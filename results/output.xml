@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.11.4 on win32)" generated="2025-02-22T15:29:07.917551" rpa="false" schemaversion="5">
+<suite id="s1" name="Home" source="C:\codigos_fontes\QAx\projects\yodapp-robot\tests\home.robot">
+<test id="s1-t1" name="Deve abrir a tela principal" line="7">
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-02-22T15:29:08.325580" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-02-22T15:29:08.324547" elapsed="0.006000">No application is open</status>
+</kw>
+<msg time="2025-02-22T15:31:57.644854" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-02-22T15:31:57.687862" level="FAIL">AttributeError: 'NoneType' object has no attribute 'ca_certs'</msg>
+<var>${AbrirApp}</var>
+<arg>http://localhost:4723</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=AndroidEmulator</arg>
+<arg>automationName=UIAutomator2</arg>
+<arg>app=${EXECDIR}/app/yodapp-beta.apk</arg>
+<arg>udid=P10C1221015000515</arg>
+<arg>autoGrantPermission=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2025-02-22T15:29:08.323546" elapsed="169.370306">AttributeError: 'NoneType' object has no attribute 'ca_certs'</status>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>Yodapp</arg>
+<arg>10</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" start="2025-02-22T15:31:57.708852" elapsed="0.000999"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>Mobile Training</arg>
+<arg>10</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" start="2025-02-22T15:31:57.710851" elapsed="0.001001"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>by Papito</arg>
+<arg>10</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="NOT RUN" start="2025-02-22T15:31:57.711852" elapsed="0.001000"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="NOT RUN" start="2025-02-22T15:31:57.713852" elapsed="0.000999"/>
+</kw>
+<status status="FAIL" start="2025-02-22T15:29:08.321547" elapsed="169.394305">AttributeError: 'NoneType' object has no attribute 'ca_certs'</status>
+</test>
+<status status="FAIL" start="2025-02-22T15:29:07.923549" elapsed="169.817303"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Home" id="s1" pass="0" fail="1" skip="0">Home</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-02-22T15:31:57.644854" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>
